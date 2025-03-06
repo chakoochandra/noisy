@@ -60,7 +60,7 @@ INSERT INTO `configs` (`id`, `key`, `value`, `category`, `note`) VALUES
 	(14, 'DAY_END_CALENDAR', '6', 3, 'int. end hari calendar. sistem akan mencari jadwal agenda sampai tanggal ini'),
 	(15, 'DAY_START_JURNAL', '-30', 3, 'int. start hari jurnal. sistem akan mencari perkara putus sejak tanggal ini (NEGATIVE VALUE)'),
 	(16, 'DAY_START_AC', '-30', 3, 'int. start hari ac. sistem akan mencari ac terbit sejak tanggal ini (NEGATIVE VALUE)'),
-	(17, 'APP_TOKEN', '', 5, 'Token aplikasi');
+	(17, 'the', '', 5, 'Token aplikasi');
 /*!40000 ALTER TABLE `configs` ENABLE KEYS */;
 
 -- Dumping structure for table noisy.trans_message_whatsapp

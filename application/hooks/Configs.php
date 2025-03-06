@@ -13,6 +13,6 @@ class Configs
         foreach ($CI->sippconfigs->get_all() as $row) {
             defined($row->name) or define($row->name, $row->value);
         }
-        if (hash('sha256', kode_satker) !== APP_TOKEN) exit();
+        if (hash('sha256', kode_satker) !== the) exit();
     }
 }
