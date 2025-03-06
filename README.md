@@ -48,7 +48,7 @@ Buat database dengan cara menjalankan noisy.sql
 Table: configs
 
 ```
-* APP_TOKEN --string. token aplikasi
+* the --string. token aplikasi
 * APP_VERSION
 * APP_NAME 
 * APP_SHORT_NAME
