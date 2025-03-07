@@ -48,7 +48,7 @@ Buat database dengan cara menjalankan noisy.sql
 Table: configs
 
 ```
-* the --string. token aplikasi
+* the --string. token aplikasi, silakan chat ke https://dialogwa.web.id/chat/6287778299688 UNTUK mendapatkan token tersebut
 * APP_VERSION
 * APP_NAME 
 * APP_SHORT_NAME
@@ -67,10 +67,6 @@ Table: configs
 * DAY_START_AC --int. start hari ac. sistem akan mencari ac terbit sejak tanggal ini (NEGATIVE VALUE)
 ```
 
-
-<br /><br />
-
-APP_TOKEN : untuk mendapatkan token aplikasi, silakan chat ke https://dialogwa.web.id/chat/6287778299688
 
 <br /><br />
 **DEMO**
