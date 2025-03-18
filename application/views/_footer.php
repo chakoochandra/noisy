@@ -1,18 +1,14 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/css/waviy.css') ?>">
 
-<footer class="main-footer p-1" style="margin-left: <?php echo isset($hasNavigation) && $hasNavigation ? '250px' : '0 !important' ?>;">
-    <!-- <div class="copyright text-center">
-            <marquee behavior="scroll" direction="left" scrollamount="5" scrolldelay="50" class="big">Visi : "Terwujudnya Pengadilan Agama Sidoarjo Yang Agung. Misi : 1. Menjaga kemandirian Aparatur Pengadilan Agama; 2. Meningkatkan kualitas pelayanan hukum yang berkeadilan, kredibel dan transparan; 3. Mewujudkan kesatuan hukum sehingga diperoleh kepastian hukum bagi masyarakat; 4. Meningkatkan pengawasan dan pembinaan;"</marquee>
-        </div> -->
-
+<footer class="main-footer p-1 <?php echo (is_development() ? 'bg-danger' : '') ?>" style="margin-left: <?php echo isset($hasNavigation) && $hasNavigation ? '250px' : '0 !important' ?>;">
     <div class="d-sm-none d-xs-flex flex-column text-xs">
         <div class="text-center"><strong><a class="btn-glowing" target="_blank" href="<?php echo base_url("site/about") ?>" target="_blank">CHAKO</a> &copy; <?php echo date('Y') ?></strong></div>
-        <div class="text-center"><b>Versi</b> <?php echo APP_VERSION ?></div>
+        <div class="text-center"><span>IP Anda: <?php echo get_client_ip() ?></span> | <b>Versi</b> <?php echo APP_VERSION ?></div>
     </div>
 
     <div class="d-none d-sm-flex justify-content-center">
         <div class="mx-2"><strong><a class="btn-glowing" target="_blank" href="<?php echo base_url("site/about") ?>" target="_blank">CHAKO</a> &copy; <?php echo date('Y') ?></strong></div>
-        <div class="mx-2"><span>IP Anda: <?php echo get_client_ip() ?></span> | <b>Versi</b> <?php echo APP_VERSION ?></div>
+        <div class="mx-2"><span>IP Anda: <?php echo get_client_ip() ?></span> | <b>Versi</b> <?php echo APP_VERSION ?><?php echo (is_development() ? ' | <b>DEVELOPMENT MODE</b>' : '') ?></div>
     </div>
 </footer>
 
