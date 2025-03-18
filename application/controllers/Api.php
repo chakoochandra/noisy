@@ -101,7 +101,7 @@ class Api extends Core_Controller
 
 				// hanya kirim notifikasi bila belum pernah dikirimi
 				if (!$this->whatsapp->find(['where' => [
-					['type' => $this->typesText[$type], 'phone_number' => $no, 'reference' => $reference, 'success <>' => 0],
+					['type' => $this->typesText[$type], 'phone_number' => $no, 'reference' => $reference, 'perkara_id' => $item->perkara_id, 'success <>' => 0],
 				]])) {
 					$data = [
 						'type' => $this->typesText[$type],
@@ -164,10 +164,10 @@ class Api extends Core_Controller
 				}
 			}
 
-			if (is_development() && $x == count(cleansePhoneNumbers(WA_TEST_TARGET))) {
-				$progress = 100;
-				break;
-			}
+			// if (is_development() && $x == count(cleansePhoneNumbers(WA_TEST_TARGET))) {
+			// 	$progress = 100;
+			// 	break;
+			// }
 		}
 
 		$this->_sendProgress(['progress' => $progress]);
@@ -204,7 +204,7 @@ class Api extends Core_Controller
 			return ['message' => isset($temp['message']) ? $temp['message'] : 'Terjadi Kesalahan!'];
 		}
 
-		sleep(60);
+		sleep(15);
 
 		$result = json_decode($result['response'], 1);
 		if (!isset($result['data'])) {

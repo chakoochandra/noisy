@@ -5,6 +5,10 @@
         border: 1px solid royalblue;
         padding: 10px;
     }
+
+    .progress {
+        border: 1px solid royalblue;
+    }
 </style>
 <link rel="stylesheet" href="<?php echo base_url('assets/nprogress/nprogress.css') ?>">
 <script src="<?php echo base_url('assets/nprogress/nprogress.js') ?>"></script>
@@ -49,7 +53,7 @@
             const data = {
                 title: 'Sedang mengirim',
                 content: `<div class="progress">
-                <div id="dynamicProgressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <div id="dynamicProgressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;">1%</div>
             </div>
             <div id="progressResponses" class="d-none flex-column mt-2"></div>`,
             };
