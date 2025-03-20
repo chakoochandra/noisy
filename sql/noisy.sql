@@ -47,8 +47,6 @@ INSERT INTO `configs` (`id`, `key`, `value`, `category`, `note`) VALUES
 	(1, 'APP_VERSION', '1.0', 5, 'string. versi aplikasi'),
 	(2, 'APP_NAME', 'Whatsapp Notification System', 5, 'string. nama aplikasi'),
 	(3, 'APP_SHORT_NAME', 'NOISY', 5, 'string. nama pendek aplikasi. [BACKUP - NANTI DIHAPUS]'),
-	(4, 'SATKER_NAME', 'Pengadilan Agama ABC', 1, 'string. nama satker'),
-	(5, 'SATKER_ADDRESS', 'Jalan ABC No. 123', 1, 'string. nama satker'),
 	(6, 'DIALOGWA_API_URL', 'https://dialogwa.web.id/api', 2, 'string. url api dialogwa.web.id'),
 	(7, 'DIALOGWA_TOKEN', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZjNiMjIyZWY1MmJjMzc4MDYxM2U1OSIsInVzZXJuYW1lIjoiY2hhbmRyYSIsImlhdCI6MTcxNzc0Nzc4NywiZXhwIjo0ODczNTA3Nzg3fQ.KIqEs7rELJzVj2hk6WJqCiYy0T0Mz7G5vbiy4gFLRQ0', 2, 'string. token dialogwa.web.id'),
 	(8, 'DIALOGWA_SESSION', 'demo', 2, 'string. sesi online dialogwa.web.id'),

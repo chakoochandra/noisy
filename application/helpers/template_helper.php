@@ -19,7 +19,7 @@ if (!function_exists('text_alamat_kantor')) {
     function text_alamat_kantor()
     {
         return '📌 Alamat Kantor :
-' . NamaPN . '. ' . SATKER_ADDRESS;
+' . NamaPN . '. ' . AlamatPN;
     }
 }
 
