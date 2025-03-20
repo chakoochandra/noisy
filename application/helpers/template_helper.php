@@ -19,7 +19,7 @@ if (!function_exists('text_alamat_kantor')) {
     function text_alamat_kantor()
     {
         return '📌 Alamat Kantor :
-' . SATKER_NAME . '. ' . SATKER_ADDRESS;
+' . NamaPN . '. ' . SATKER_ADDRESS;
     }
 }
 
@@ -33,7 +33,7 @@ if (!function_exists('text_footer')) {
 if (!function_exists('text_antrian')) {
     function text_antrian()
     {
-        return '🏛️ *INFORMASI ' . strtoupper(SATKER_NAME) . '*
+        return '🏛️ *INFORMASI ' . strtoupper(NamaPN) . '*
 
 *Nomor Perkara* : %s
 *Tanggal Sidang* : %s
@@ -49,7 +49,7 @@ if (!function_exists('text_antrian')) {
 if (!function_exists('text_sidang')) {
     function text_sidang()
     {
-        return '🏛️ *INFORMASI ' . strtoupper(SATKER_NAME) . '*
+        return '🏛️ *INFORMASI ' . strtoupper(NamaPN) . '*
 
 *Nomor Perkara* : %s
 *Tanggal Sidang* : %s
@@ -63,7 +63,7 @@ if (!function_exists('text_sidang')) {
 if (!function_exists('text_calendar')) {
     function text_calendar()
     {
-        return '🏛️ *INFORMASI COURT CALENDAR ' . strtoupper(SATKER_NAME) . '*
+        return '🏛️ *INFORMASI COURT CALENDAR ' . strtoupper(NamaPN) . '*
 
 *Nomor Perkara* : %s
 *Agenda* : %s
@@ -77,14 +77,14 @@ if (!function_exists('text_calendar')) {
 if (!function_exists('text_psp')) {
     function text_psp()
     {
-        return '🏛️ *INFORMASI SISA PANJAR ' . strtoupper(SATKER_NAME) . '*
+        return '🏛️ *INFORMASI SISA PANJAR ' . strtoupper(NamaPN) . '*
 
 *Nomor Perkara* : %s
 *Tanggal Putus* : %s
 %s
 *Sisa Panjar : %s*
 
-Anda dapat melakukan pengambilan sisa panjar pada hari dan jam kerja di Kantor ' . SATKER_NAME . ' dengan *membawa KTP asli dan diambil sendiri (tidak bisa diwakilkan)*
+Anda dapat melakukan pengambilan sisa panjar pada hari dan jam kerja di Kantor ' . NamaPN . ' dengan *membawa KTP asli dan diambil sendiri (tidak bisa diwakilkan)*
 
 _Abaikan notifikasi ini jika Anda sudah melakukan pengambilan sisa panjar._
 
@@ -97,13 +97,13 @@ _Abaikan notifikasi ini jika Anda sudah melakukan pengambilan sisa panjar._
 if (!function_exists('text_ac')) {
     function text_ac()
     {
-        return '🏛️ *INFORMASI AKTA CERAI ' . strtoupper(SATKER_NAME) . '*
+        return '🏛️ *INFORMASI AKTA CERAI ' . strtoupper(NamaPN) . '*
 
 *Nomor Perkara* : %s
 *Tanggal Akta Cerai : %s*
 %s
 
-Anda dapat melakukan pengambilan Akta Cerai pada hari dan jam kerja di Kantor ' . SATKER_NAME . ' dengan *membawa KTP asli dan diambil sendiri (tidak bisa diwakilkan)*
+Anda dapat melakukan pengambilan Akta Cerai pada hari dan jam kerja di Kantor ' . NamaPN . ' dengan *membawa KTP asli dan diambil sendiri (tidak bisa diwakilkan)*
 
 _Abaikan notifikasi ini jika Anda sudah melakukan pengambilan Akta Cerai._
 

@@ -52,7 +52,6 @@ Table: configs
 * APP_VERSION
 * APP_NAME 
 * APP_SHORT_NAME
-* SATKER_NAME
 * SATKER_ADDRESS
 * DIALOGWA_API_URL --string. url api dialogwa.web.id
 * DIALOGWA_TOKEN --string. token dialogwa.web.id

@@ -62,7 +62,7 @@
     <div class="card container-main d-flex justify-content-center" style="background: transparent;">
         <?php $showLogo = isset($showLogo) ? $showLogo : false ?>
         <?php if ($showLogo) : ?>
-            <img src="<?php echo base_url('assets/images/icon.png') ?>" height="100px" alt="Logo <?php echo SATKER_NAME ?>" class="brand-image mt-3">
+            <img src="<?php echo base_url('assets/images/icon.png') ?>" height="100px" alt="Logo <?php echo NamaPN ?>" class="brand-image mt-3">
         <?php endif ?>
         <?php if (isset($showTitle) && $showTitle) : ?>
             <span class="h4 title-h text-glowing text-center">
