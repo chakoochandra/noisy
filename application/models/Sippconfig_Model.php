@@ -10,11 +10,6 @@ class Sippconfig_Model extends CI_Model
 
 	function get_all()
 	{
-		return $this->db_sipp->from('sys_config')->get()->result();
-	}
-
-	function get_app_configs()
-	{
-		return $this->db->from($this->db->database . '.' . TBL_CONFIGS)->order_by('category ASC, key ASC, value ASC')->get()->result();
+		return array_merge($this->db_sipp->from('sys_config')->get()->result(), $this->db->from($this->db->database . '.' . TBL_CONFIGS)->order_by('category ASC, key ASC, value ASC')->get()->result());
 	}
 }
