@@ -14,5 +14,8 @@ class Configs
             }
         }
         if (hash('sha256', kode_satker) !== the) exit;
+        // foreach ($CI->sippconfigs->get_app_config() as $row) {
+        //     defined($row->key) or define($row->key, $row->value);
+        // }
     }
 }
