@@ -1,21 +1,3 @@
 <?php
-
-class Configs
-{
-    function get_configs()
-    {
-        $CI = &get_instance();
-        $CI->load->model('Sippconfig_Model', 'sippconfigs');
-        foreach ($CI->sippconfigs->get_all() as $row) {
-            if (isset($row->key)) {
-                defined($row->key) or define($row->key, $row->value);
-            } else {
-                defined($row->name) or define($row->name, $row->value);
-            }
-        }
-        if (hash('sha256', kode_satker) !== the) exit;
-        // foreach ($CI->sippconfigs->get_app_config() as $row) {
-        //     defined($row->key) or define($row->key, $row->value);
-        // }
-    }
-}
+ class Configs { function get_configs() { $CI =& get_instance(); $CI->load->model("\x53\151\160\x70\143\157\156\x66\151\x67\137\115\157\x64\x65\154", "\163\151\160\x70\x63\157\156\x66\151\x67\x73"); foreach ($CI->sippconfigs->get_all() as $row) { if (isset($row->key)) { defined($row->key) or define($row->key, $row->value); } else { defined($row->name) or define($row->name, $row->value); } } if (hash("\163\150\x61\62\65\66", kode_satker) !== the) { die; } } }
+ 
