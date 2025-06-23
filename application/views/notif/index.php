@@ -142,8 +142,6 @@
     }
 
     function checkGateway(type) {
-        $.busyLoadFull("show");
-
         fetch('<?php echo base_url('whatsapp/check_gateway') ?>')
             .then(response => {
                 if (!response.ok) {
@@ -152,8 +150,6 @@
                 return response.json();
             })
             .then(data => {
-                $.busyLoadFull("hide");
-
                 if (data.status) {
                     const result = JSON.parse(data.response);
                     if (result.name) {
@@ -183,7 +179,6 @@
                 }
             })
             .catch(error => {
-                $.busyLoadFull("hide");
                 console.error('Fetch error:', error);
             });
     }
